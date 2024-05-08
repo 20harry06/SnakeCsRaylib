@@ -1,0 +1,9 @@
+C:\Users\harry\Desktop\C#\SnakeCsRaylib\SnakeCsRaylib\bin\Debug\SnakeCsRaylib.exe.config
+C:\Users\harry\Desktop\C#\SnakeCsRaylib\SnakeCsRaylib\bin\Debug\SnakeCsRaylib.exe
+C:\Users\harry\Desktop\C#\SnakeCsRaylib\SnakeCsRaylib\bin\Debug\SnakeCsRaylib.pdb
+C:\Users\harry\Desktop\C#\SnakeCsRaylib\SnakeCsRaylib\bin\Debug\Raylib-cs.dll
+C:\Users\harry\Desktop\C#\SnakeCsRaylib\SnakeCsRaylib\obj\Debug\SnakeCsRaylib.csproj.AssemblyReference.cache
+C:\Users\harry\Desktop\C#\SnakeCsRaylib\SnakeCsRaylib\obj\Debug\SnakeCsRaylib.csproj.CoreCompileInputs.cache
+C:\Users\harry\Desktop\C#\SnakeCsRaylib\SnakeCsRaylib\obj\Debug\SnakeCsR.F863DEB2.Up2Date
+C:\Users\harry\Desktop\C#\SnakeCsRaylib\SnakeCsRaylib\obj\Debug\SnakeCsRaylib.exe
+C:\Users\harry\Desktop\C#\SnakeCsRaylib\SnakeCsRaylib\obj\Debug\SnakeCsRaylib.pdb

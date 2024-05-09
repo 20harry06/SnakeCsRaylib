@@ -7,24 +7,46 @@ using Raylib_cs;
 
 namespace SnakeCsRaylib
 {
-    internal class Game
+    internal static class Game
     {
-
-        public Game()
+        public static void Setup()
         {
             Raylib.SetTargetFPS(60);
             Raylib.InitWindow(750, 750, "Snake");
         }
 
-        public void Loop()
+        public static void Loop()
         {
+            List<int> snakeX = new List<int>();
+            List<int> snakeY = new List<int>();
+            snakeX.Add(29);
+            snakeY.Add(29);
+
             while(!Raylib.WindowShouldClose())
             {
-                Raylib.BeginDrawing();
+                Render(snakeX, snakeY, 10, 10);
+            }
+        }
 
-                Raylib.ClearBackground(Color.GRAY);
+        private static void Render(List<int> snakeX, List<int> snakeY, int fruitX, int fruitY)
+        {
+            Raylib.BeginDrawing();
+            Raylib.ClearBackground(Color.GRAY);
+            RenderSnake(snakeX, snakeY);
+            Raylib.EndDrawing();
+        }
 
-                Raylib.EndDrawing();
+        private static void RenderSnake(List<int> snakeX, List<int> snakeY)
+        {
+            Rectangle snakePiece;
+            snakePiece.width = 25;
+            snakePiece.height = 25;
+
+            for (int i = 0; i < snakeX.Count; i++)
+            {
+                snakePiece.x = snakeX[i] * 25;
+                snakePiece.y = snakeY[i] * 25;
+                Raylib.DrawRectangleRounded(snakePiece, (float)0.9, 5, Color.GREEN);
             }
         }
     }

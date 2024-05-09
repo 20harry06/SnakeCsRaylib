@@ -10,9 +10,9 @@ namespace SnakeCsRaylib
     {
         static void Main(string[] args)
         {
-            Game game = new Game();
+            Game.Setup();
 
-            game.Loop();
+            Game.Loop();
         }
     }
 }

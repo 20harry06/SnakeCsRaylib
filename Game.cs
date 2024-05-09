@@ -11,20 +11,18 @@ namespace SnakeCsRaylib
     {
         public static void Setup()
         {
-            Raylib.SetTargetFPS(60);
+            Raylib.SetTargetFPS(15);
             Raylib.InitWindow(750, 750, "Snake");
         }
 
         public static void Loop()
         {
-            List<int> snakeX = new List<int>();
-            List<int> snakeY = new List<int>();
-            snakeX.Add(29);
-            snakeY.Add(29);
+            Snake snake = new Snake();
 
             while(!Raylib.WindowShouldClose())
             {
-                Render(snakeX, snakeY, 10, 10);
+                snake.Update();
+                Render(snake.SnakeX, snake.SnakeY, 10, 10);
             }
         }
 

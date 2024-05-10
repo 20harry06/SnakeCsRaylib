@@ -25,10 +25,29 @@ namespace SnakeCsRaylib
         public List<int> SnakeX { get {  return snakeX; } }
         public List<int> SnakeY { get {  return snakeY; } }
 
-        public void Update()
+        public void Update(int fruitX, int fruitY)
         {
             UpdateDirection();
+            if (Eat(fruitX, fruitY))
+            {
+                Grow();
+            }
             Move();
+        }
+
+        private void Grow()
+        {
+            snakeX.Add(snakeX[SnakeX.Count - 1]);
+            snakeY.Add(snakeY[snakeY.Count - 1]);
+        }
+
+        private bool Eat(int fruitX,int fruitY)
+        {
+            if(fruitX == snakeX[0] && fruitY == snakeY[0])
+            {
+                return true;
+            }
+            return false;
         }
 
         private void UpdateDirection()

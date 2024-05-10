@@ -11,7 +11,7 @@ namespace SnakeCsRaylib
     {
         public static void Setup()
         {
-            Raylib.SetTargetFPS(15);
+            Raylib.SetTargetFPS(60);
             Raylib.InitWindow(750, 750, "Snake");
         }
 
@@ -21,7 +21,7 @@ namespace SnakeCsRaylib
 
             while(!Raylib.WindowShouldClose())
             {
-                snake.Update();
+                snake.Update(0, 0);
                 Render(snake.SnakeX, snake.SnakeY, 10, 10);
             }
         }

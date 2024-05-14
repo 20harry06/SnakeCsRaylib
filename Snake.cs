@@ -10,8 +10,8 @@ namespace SnakeCsRaylib
 {
     internal class Snake
     {
-        List<int> snakeX, snakeY, snakeXBuffer, snakeYBuffer;
-        int direction;
+        private List<int> snakeX, snakeY, snakeXBuffer, snakeYBuffer;
+        private int direction;
 
         public Snake()
         {
@@ -72,19 +72,51 @@ namespace SnakeCsRaylib
 
         private void Move()
         {
+            MoveBody();
+
+            MoveHead();
+        }
+
+        private void MoveBody()
+        {
+            snakeXBuffer = new List<int>();
+            snakeYBuffer = new List<int>();
+
+            for(int i = 0; i < snakeX.Count; i++)
+            {
+                snakeXBuffer.Add(snakeX[i]);
+                snakeYBuffer.Add(snakeY[i]);
+            }
+
+            snakeX = new List<int> { 10 };
+            snakeY = new List<int> { 10 };
+
+            for(int i = 0; i < snakeXBuffer.Count; i++)
+            {
+                snakeX.Add(snakeXBuffer[i]); 
+                snakeY.Add(snakeYBuffer[i]);
+            }
+        }
+
+        private void MoveHead()
+        {
             switch (direction)
             {
                 case 0:
-                    snakeY[0]--;
+                    snakeY[0] = snakeYBuffer[0] - 1;
+                    snakeX[0] = snakeXBuffer[0];
                     break;
                 case 1:
-                    snakeX[0]++;
+                    snakeX[0] = snakeXBuffer[0] + 1;
+                    snakeY[0] = snakeYBuffer[0];
                     break;
                 case 2:
-                    snakeY[0]++;
+                    snakeY[0] = snakeYBuffer[0] + 1;
+                    snakeX[0] = snakeXBuffer[0];
                     break;
                 case 3:
-                    snakeX[0]--;
+                    snakeX[0] = snakeXBuffer[0] - 1;
+                    snakeY[0] = snakeYBuffer[0];
                     break;
             }
         }

@@ -12,9 +12,11 @@ namespace SnakeCsRaylib
     {
         private List<int> snakeX, snakeY, snakeXBuffer, snakeYBuffer;
         private int direction;
+        private double time;
 
         public Snake()
         {
+            time = 0;
             direction = 0;
             snakeX = new List<int>();
             snakeY = new List<int>();
@@ -27,12 +29,17 @@ namespace SnakeCsRaylib
 
         public void Update(int fruitX, int fruitY)
         {
+            time += Raylib.GetFrameTime();
             UpdateDirection();
-            if (Eat(fruitX, fruitY))
+            if(time >= 0.3)
             {
-                Grow();
+                if (Eat(0, 0))
+                {
+                    Grow();
+                }
+                Move();
+                time = 0;
             }
-            Move();
         }
 
         private void Grow()
@@ -91,7 +98,7 @@ namespace SnakeCsRaylib
             snakeX = new List<int> { 10 };
             snakeY = new List<int> { 10 };
 
-            for(int i = 0; i < snakeXBuffer.Count; i++)
+            for(int i = 0; i < snakeXBuffer.Count - 1; i++)
             {
                 snakeX.Add(snakeXBuffer[i]); 
                 snakeY.Add(snakeYBuffer[i]);

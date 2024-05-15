@@ -11,7 +11,7 @@ namespace SnakeCsRaylib
     {
         public static void Setup()
         {
-            Raylib.SetTargetFPS(15);
+            Raylib.SetTargetFPS(60);
             Raylib.InitWindow(750, 750, "Snake");
         }
 
@@ -30,6 +30,7 @@ namespace SnakeCsRaylib
         {
             Raylib.BeginDrawing();
             Raylib.ClearBackground(Color.GRAY);
+            Raylib.DrawRectangle(0, 0, 25, 25, Color.RED);
             RenderSnake(snakeX, snakeY);
             Raylib.EndDrawing();
         }

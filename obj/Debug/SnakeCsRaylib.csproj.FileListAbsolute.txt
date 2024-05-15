@@ -15,3 +15,12 @@ C:\Users\harry\Documents\GitHub\SnakeCsRaylib\obj\Debug\SnakeCsRaylib.csproj.Cor
 C:\Users\harry\Documents\GitHub\SnakeCsRaylib\obj\Debug\SnakeCsR.F863DEB2.Up2Date
 C:\Users\harry\Documents\GitHub\SnakeCsRaylib\obj\Debug\SnakeCsRaylib.exe
 C:\Users\harry\Documents\GitHub\SnakeCsRaylib\obj\Debug\SnakeCsRaylib.pdb
+H:\Documents\GitHub\SnakeCsRaylib\bin\Debug\SnakeCsRaylib.exe.config
+H:\Documents\GitHub\SnakeCsRaylib\bin\Debug\SnakeCsRaylib.exe
+H:\Documents\GitHub\SnakeCsRaylib\bin\Debug\SnakeCsRaylib.pdb
+H:\Documents\GitHub\SnakeCsRaylib\obj\Debug\SnakeCsRaylib.csproj.AssemblyReference.cache
+H:\Documents\GitHub\SnakeCsRaylib\obj\Debug\SnakeCsRaylib.csproj.SuggestedBindingRedirects.cache
+H:\Documents\GitHub\SnakeCsRaylib\obj\Debug\SnakeCsRaylib.csproj.CoreCompileInputs.cache
+H:\Documents\GitHub\SnakeCsRaylib\obj\Debug\SnakeCsRaylib.csproj.CopyComplete
+H:\Documents\GitHub\SnakeCsRaylib\obj\Debug\SnakeCsRaylib.exe
+H:\Documents\GitHub\SnakeCsRaylib\obj\Debug\SnakeCsRaylib.pdb
